@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO-метаданные -->
+  <title>Сборка ПК на заказ и калькулятор конфигурации компьютера — HyperPC Store</title>
+  <meta name="description" content="Профессиональная сборка игровых компьютеров и рабочих станций на заказ с калькулятором стоимости онлайн. Кабель-менеджмент, стресс-тестирование 24 часа и гарантия 3 года.">
+  <meta name="keywords" content="сборка пк на заказ, калькулятор пк онлайн, модернизация компьютера, апгрейд пк, кабель менеджмент системного блока">
+  <link rel="canonical" href="https://hyper-pc-store.ru/services.html">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Шапка сайта -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        Hyper<span>PC</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Основное меню">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог ПК</a></li>
+          <li><a href="services.html" class="active">Сборка на заказ</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-contacts">
+        <a href="tel:+78005553535" class="phone-link">+7 (800) 555-35-35</a>
+        <a href="#builder" class="btn btn-primary">Калькулятор ПК</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Хлебные крошки -->
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a href="index.html">Главная</a>
+      <span>/</span>
+      Услуги и конфигуратор сборки
+    </nav>
+  </div>
+
+  <main class="section" style="padding-top: 10px;">
+    <div class="container">
+      <div class="section-header" style="text-align: left; margin-bottom: 30px;">
+        <h1>Услуги сервисного центра и сборка компьютеров</h1>
+        <p>Качественная сборка, апгрейд, обслуживание систем охлаждения и диагностика комплектующих</p>
+      </div>
+
+      <!-- Сетка сервисных услуг -->
+      <section class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🛠️</div>
+          <h3>Сборка системного блока под ключ</h3>
+          <p>Подбор комплектующих под ваш бюджет, идеальная укладка кабелей, настройка BIOS и проверка совместимости всех узлов.</p>
+          <div class="service-price">от 3 500 ₽</div>
+          <a href="#builder" class="btn btn-secondary">Рассчитать онлайн</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">⚡</div>
+          <h3>Комплексный апгрейд (модернизация)</h3>
+          <p>Замена видеокарты, процессора, увеличение оперативной памяти или установка быстрого NVMe накопителя с переносом ОС.</p>
+          <div class="service-price">от 2 000 ₽</div>
+          <a href="contacts.html" class="btn btn-secondary">Записаться на апгрейд</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">❄️</div>
+          <h3>Чистка и замена термоинтерфейса</h3>
+          <p>Полное удаление пыли, замена термопасты на топовую с высокой теплопроводностью, замена термопрокладок на видеокартах.</p>
+          <div class="service-price">от 1 800 ₽</div>
+          <a href="contacts.html" class="btn btn-secondary">Заказать чистку</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">📊</div>
+          <h3>Диагностика и стресс-тесты</h3>
+          <p>Выявление причин нестабильной работы, синих экранов (BSOD), перегрева и скрытых дефектов памяти или видеочипа.</p>
+          <div class="service-price">Бесплатно при ремонте</div>
+          <a href="contacts.html" class="btn btn-secondary">Сдать на диагностику</a>
+        </div>
+      </section>
+
+      <!-- Интерактивный калькулятор конфигуратора сборки -->
+      <section class="builder-box" id="builder">
+        <div class="section-header" style="text-align: left; margin-bottom: 24px;">
+          <h2>Онлайн-калькулятор стоимости сборки ПК</h2>
+          <p>Выберите основные компоненты, чтобы рассчитать примерную стоимость готового компьютера с гарантией</p>
+        </div>
+
+        <div class="builder-layout">
+          <!-- Левая колонка: Селекторы компонентов -->
+          <div class="builder-controls">
+            <!-- Процессор -->
+            <div class="builder-step">
+              <label for="calc-cpu">
+                <span>Процессор (CPU)</span>
+              </label>
+              <select id="calc-cpu">
+                <option value="12000" data-name="Intel Core i3-12100F">Intel Core i3-12100F (+12 000 ₽)</option>
+                <option value="18000" data-name="Intel Core i5-13400F" selected>Intel Core i5-13400F (+18 000 ₽)</option>
+                <option value="31000" data-name="AMD Ryzen 7 7700X">AMD Ryzen 7 7700X (+31 000 ₽)</option>
+                <option value="44000" data-name="Intel Core i7-14700KF">Intel Core i7-14700KF (+44 000 ₽)</option>
+              </select>
+            </div>
+
+            <!-- Видеокарта -->
+            <div class="builder-step">
+              <label for="calc-gpu">
+                <span>Видеокарта (GPU)</span>
+              </label>
+              <select id="calc-gpu">
+                <option value="32000" data-name="NVIDIA GeForce RTX 4060 8GB">GeForce RTX 4060 8GB (+32 000 ₽)</option>
+                <option value="64000" data-name="NVIDIA GeForce RTX 4070 12GB" selected>GeForce RTX 4070 12GB (+64 000 ₽)</option>
+                <option value="115000" data-name="NVIDIA GeForce RTX 4080 Super 16GB">GeForce RTX 4080 Super 16GB (+115 000 ₽)</option>
+              </select>
+            </div>
+
+            <!-- Оперативная память -->
+            <div class="builder-step">
+              <label for="calc-ram">
+                <span>Оперативная память (RAM)</span>
+              </label>
+              <select id="calc-ram">
+                <option value="5500" data-name="16 GB DDR4 3200MHz">16 GB DDR4 3200MHz (+5 500 ₽)</option>
+                <option value="12500" data-name="32 GB DDR5 6000MHz" selected>32 GB DDR5 6000MHz (+12 500 ₽)</option>
+                <option value="24000" data-name="64 GB DDR5 6000MHz">64 GB DDR5 6000MHz (+24 000 ₽)</option>
+              </select>
+            </div>
+
+            <!-- Накопитель -->
+            <div class="builder-step">
+              <label for="calc-ssd">
+                <span>Накопитель (SSD NVMe)</span>
+              </label>
+              <select id="calc-ssd">
+                <option value="4500" data-name="512 GB M.2 NVMe">512 GB M.2 NVMe (+4 500 ₽)</option>
+                <option value="8500" data-name="1 TB M.2 NVMe Gen4" selected>1 TB M.2 NVMe Gen4 (+8 500 ₽)</option>
+                <option value="15000" data-name="2 TB M.2 NVMe Gen4">2 TB M.2 NVMe Gen4 (+15 000 ₽)</option>
+              </select>
+            </div>
+
+            <!-- Охлаждение и корпус -->
+            <div class="builder-step">
+              <label for="calc-case">
+                <span>Корпус, блок питания и охлаждение</span>
+              </label>
+              <select id="calc-case">
+                <option value="12000" data-name="Базовый комплект (Воздушный кулер + БП 600W)">Базовый комплект 600W (+12 000 ₽)</option>
+                <option value="21000" data-name="Игровой комплект (СЖО 240мм + БП 750W Gold)" selected>Игровой комплект СЖО + 750W Gold (+21 000 ₽)</option>
+                <option value="33000" data-name="Премиум комплект (СЖО 360мм + БП 850W Platinum)">Премиум комплект СЖО 360мм + 850W Platinum (+33 000 ₽)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Правая колонка: Итоговый расчет -->
+          <div class="builder-summary">
+            <h3>Итоговая конфигурация</h3>
+            <ul class="summary-list">
+              <li><span>Комплектующие:</span> <strong id="sum-parts">124 000 ₽</strong></li>
+              <li><span>Профессиональная сборка:</span> <strong>3 500 ₽</strong></li>
+              <li><span>Тестирование и ОС:</span> <strong style="color: #4ade80;">Бесплатно</strong></li>
+              <li><span>Гарантия (3 года):</span> <strong style="color: #4ade80;">Включена</strong></li>
+            </ul>
+
+            <div style="font-size: 13px; color: var(--text-muted); text-align: center; margin-bottom: 6px;">Ориентировочная цена:</div>
+            <div class="summary-total" id="calc-total-price">127 500 ₽</div>
+
+            <button type="button" class="btn btn-primary" id="btn-order-build" style="width: 100%; padding: 14px 20px; font-size: 16px;">Заказать эту сборку</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Этапы сборки на заказ -->
+      <section class="section" style="padding-top: 0;">
+        <div class="section-header" style="text-align: left;">
+          <h2>Как происходит сборка вашего компьютера</h2>
+          <p>Прозрачный регламент от первого звонка до передачи готового ПК</p>
+        </div>
+
+        <div class="steps-timeline">
+          <div class="timeline-item">
+            <div class="step-num">01</div>
+            <h4>Согласование ТЗ</h4>
+            <p>Уточняем бюджет, разрешение монитора, любимые игры и программы. Фиксируем итоговую спецификацию.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="step-num">02</div>
+            <h4>Сборка и монтаж</h4>
+            <p>Инженер аккуратно устанавливает компоненты, наносит термопасту и выполняет премиум кабель-менеджмент.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="step-num">03</div>
+            <h4>Стресс-тестирование</h4>
+            <p>Прогон системного блока в тестах стабильности (OCCT, AIDA64, FurMark) для исключения заводского брака.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="step-num">04</div>
+            <h4>Передача и гарантия</h4>
+            <p>Выдача в шоуруме или бережная доставка в обрешётке с полным комплектом коробок и гарантийным талоном на 3 года.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Подвал сайта -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>HyperPC Store</h4>
+          <p>Специализированный интернет-магазин игровых компьютеров, рабочих станций и оригинальных комплектующих.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Каталог</h4>
+          <ul>
+            <li><a href="catalog.html">Игровые ПК</a></li>
+            <li><a href="catalog.html">Рабочие станции</a></li>
+            <li><a href="catalog.html">Комплектующие</a></li>
+            <li><a href="services.html">Кастомные сборки</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Информация</h4>
+          <ul>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="about.html">Гарантия и сервис</a></li>
+            <li><a href="about.html">Условия доставки</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <ul>
+            <li>Тел: +7 (800) 555-35-35</li>
+            <li>Email: info@hyper-pc-store.ru</li>
+            <li>Режим: Ежедневно 10:00–21:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 HyperPC Store. Учебный проект по специальности 09.02.07. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

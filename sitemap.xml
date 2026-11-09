@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Главная страница -->
+  <url>
+      <loc>https://hyper-pc-store.ru/index.html</loc>
+      <lastmod>2026-11-07</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>1.0</priority>
+  </url>
+  
+  <!-- Каталог компьютеров и комплектующих -->
+  <url>
+      <loc>https://hyper-pc-store.ru/catalog.html</loc>
+      <lastmod>2026-11-07</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.9</priority>
+  </url>
+
+  <!-- Карточки товаров -->
+  <url>
+      <loc>https://hyper-pc-store.ru/product-base.html</loc>
+      <lastmod>2026-11-07</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+  </url>
+  <url>
+      <loc>https://hyper-pc-store.ru/product-pro.html</loc>
+      <lastmod>2026-11-07</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+  </url>
+  <url>
+      <loc>https://hyper-pc-store.ru/product-ultra.html</loc>
+      <lastmod>2026-11-07</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+  </url>
+  <url>
+      <loc>https://hyper-pc-store.ru/product-creator.html</loc>
+      <lastmod>2026-11-07</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+  </url>
+  <url>
+      <loc>https://hyper-pc-store.ru/product-render.html</loc>
+      <lastmod>2026-11-07</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+  </url>
+  <url>
+      <loc>https://hyper-pc-store.ru/product-office.html</loc>
+      <lastmod>2026-11-07</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+  </url>
+
+  <!-- Услуги сборки ПК, модернизации и техобслуживания -->
+  <url>
+      <loc>https://hyper-pc-store.ru/services.html</loc>
+      <lastmod>2026-11-07</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+  </url>
+  
+  <!-- О компании, доставка, способы оплаты и гарантия -->
+  <url>
+      <loc>https://hyper-pc-store.ru/about.html</loc>
+      <lastmod>2026-11-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+  </url>
+  
+  <!-- Контакты, адрес шоурума и реквизиты -->
+  <url>
+      <loc>https://hyper-pc-store.ru/contacts.html</loc>
+      <lastmod>2026-11-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+  </url>
+</urlset>

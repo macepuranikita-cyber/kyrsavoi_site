@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO-метаданные -->
+  <title>Каталог игровых ПК и рабочих станций — купить компьютер в HyperPC Store</title>
+  <meta name="description" content="Каталог мощных игровых компьютеров и профессиональных рабочих станций. Выбирайте готовые сборки на базе Intel Core, AMD Ryzen и видеокарт NVIDIA RTX с гарантией 3 года.">
+  <meta name="keywords" content="каталог игровых пк, купить компьютер, системный блок rtx 4070, мощный пк, компьютеры для игр">
+  <link rel="canonical" href="https://hyper-pc-store.ru/catalog.html">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Шапка сайта -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        Hyper<span>PC</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Основное меню">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html" class="active">Каталог ПК</a></li>
+          <li><a href="services.html">Сборка на заказ</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-contacts">
+        <a href="tel:+78005553535" class="phone-link">+7 (800) 555-35-35</a>
+        <a href="services.html" class="btn btn-primary">Конфигуратор</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Хлебные крошки (для SEO и навигации) -->
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a href="index.html">Главная</a>
+      <span>/</span>
+      Каталог компьютеров
+    </nav>
+  </div>
+
+  <main class="section" style="padding-top: 10px;">
+    <div class="container">
+      <div class="section-header" style="text-align: left; margin-bottom: 24px;">
+        <h1>Каталог компьютеров и рабочих станций</h1>
+        <p>Выберите готовую протестированную сборку или закажите индивидуальную модификацию</p>
+      </div>
+
+      <div class="catalog-layout">
+        <!-- Боковая панель фильтрации -->
+        <aside class="filters-sidebar" aria-label="Фильтры каталога">
+          <h3>Фильтры</h3>
+
+          <!-- Фильтр по назначению -->
+          <div class="filter-group">
+            <h4>Категория</h4>
+            <label><input type="checkbox" name="cat" value="gaming" checked> Игровые ПК</label>
+            <label><input type="checkbox" name="cat" value="workstation" checked> Рабочие станции</label>
+            <label><input type="checkbox" name="cat" value="office" checked> Офис и учеба</label>
+          </div>
+
+          <!-- Фильтр по видеокарте -->
+          <div class="filter-group">
+            <h4>Видеокарта</h4>
+            <label><input type="checkbox" name="gpu" value="rtx4060" checked> GeForce RTX 4060</label>
+            <label><input type="checkbox" name="gpu" value="rtx4070" checked> GeForce RTX 4070</label>
+            <label><input type="checkbox" name="gpu" value="rtx4080" checked> GeForce RTX 4080 / 4090</label>
+          </div>
+
+          <!-- Фильтр по процессору -->
+          <div class="filter-group">
+            <h4>Процессор</h4>
+            <label><input type="checkbox" name="cpu" value="intel" checked> Intel Core</label>
+            <label><input type="checkbox" name="cpu" value="amd" checked> AMD Ryzen</label>
+          </div>
+
+          <button type="button" id="reset-filters" class="btn btn-secondary" style="width: 100%; margin-top: 10px;">Сбросить фильтры</button>
+        </aside>
+
+        <!-- Основная колонка с карточками -->
+        <section class="catalog-content">
+          <div class="catalog-toolbar">
+            <div class="toolbar-counter">
+              Найдено конфигураций: <strong id="product-count">6</strong>
+            </div>
+            <div>
+              <label for="sort-select" style="font-size: 13px; color: var(--text-muted); margin-right: 8px;">Сортировка:</label>
+              <select id="sort-select" style="padding: 6px 10px; background: #0b1120; color: #fff; border: 1px solid var(--border-color); border-radius: 4px;">
+                <option value="popular">По популярности</option>
+                <option value="price-asc">Сначала дешевле</option>
+                <option value="price-desc">Сначала дороже</option>
+              </select>
+            </div>
+          </div>
+
+<!-- Сетка с карточками товаров -->
+          <div class="products-grid" id="catalog-grid">
+
+            <!-- Товар 1 -->
+            <article class="product-card" data-cat="gaming" data-gpu="rtx4060" data-cpu="intel" data-price="89990">
+              <div class="product-card-img">
+                <img src="images/pc_starter.jpg" alt="Игровой компьютер Hyper Base i5 RTX 4060" loading="lazy">
+              </div>
+              <div class="product-card-body">
+                <span class="stock-badge stock-in">В наличии</span>
+                <h2 class="product-title">Hyper Base i5</h2>
+                <ul class="specs-list">
+                  <li><span>Процессор:</span> <strong>Intel Core i5-13400F</strong></li>
+                  <li><span>Видеокарта:</span> <strong>RTX 4060 8GB</strong></li>
+                  <li><span>ОЗУ:</span> <strong>16 GB DDR4</strong></li>
+                  <li><span>Накопитель:</span> <strong>1 TB NVMe SSD</strong></li>
+                </ul>
+                <span class="mockup-disclaimer">*Примерная визуализация сборки</span>
+                <div class="price-row">
+                  <span class="product-price">89 990 ₽</span>
+                  <a href="product-base.html" class="btn btn-primary">Подробнее</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Товар 2 -->
+            <article class="product-card" data-cat="gaming" data-gpu="rtx4070" data-cpu="amd" data-price="149990">
+              <div class="product-card-img">
+                <img src="images/pc_pro.jpg" alt="Игровой компьютер Hyper Pro Gaming RTX 4070" loading="lazy">
+              </div>
+              <div class="product-card-body">
+                <span class="stock-badge stock-in">В наличии</span>
+                <h2 class="product-title">Hyper Pro Gaming</h2>
+                <ul class="specs-list">
+                  <li><span>Процессор:</span> <strong>AMD Ryzen 7 7700X</strong></li>
+                  <li><span>Видеокарта:</span> <strong>RTX 4070 12GB</strong></li>
+                  <li><span>ОЗУ:</span> <strong>32 GB DDR5</strong></li>
+                  <li><span>Накопитель:</span> <strong>2 TB Gen4 SSD</strong></li>
+                </ul>
+                <span class="mockup-disclaimer">*Примерная визуализация сборки</span>
+                <div class="price-row">
+                  <span class="product-price">149 990 ₽</span>
+                  <a href="product-pro.html" class="btn btn-primary">Подробнее</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Товар 3 -->
+            <article class="product-card" data-cat="gaming" data-gpu="rtx4080" data-cpu="intel" data-price="224990">
+              <div class="product-card-img">
+                <img src="images/pc_ultra.jpg" alt="Игровой компьютер Hyper Ultra Extreme RTX 4080 Super" loading="lazy">
+              </div>
+              <div class="product-card-body">
+                <span class="stock-badge stock-in">В наличии</span>
+                <h2 class="product-title">Hyper Ultra Extreme</h2>
+                <ul class="specs-list">
+                  <li><span>Процессор:</span> <strong>Intel Core i7-14700KF</strong></li>
+                  <li><span>Видеокарта:</span> <strong>RTX 4080 Super 16GB</strong></li>
+                  <li><span>ОЗУ:</span> <strong>32 GB DDR5</strong></li>
+                  <li><span>Накопитель:</span> <strong>2 TB Gen4 SSD</strong></li>
+                </ul>
+                <span class="mockup-disclaimer">*Примерная визуализация сборки</span>
+                <div class="price-row">
+                  <span class="product-price">224 990 ₽</span>
+                  <a href="product-ultra.html" class="btn btn-primary">Подробнее</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Товар 4: Рабочая станция -->
+            <article class="product-card" data-cat="workstation" data-gpu="rtx4070" data-cpu="intel" data-price="179990">
+              <div class="product-card-img">
+                <img src="images/pc_creator.jpg" alt="Рабочая станция Hyper Studio Creator i9" loading="lazy">
+              </div>
+              <div class="product-card-body">
+                <span class="stock-badge stock-order">Под заказ (2 дня)</span>
+                <h2 class="product-title">Hyper Studio Creator</h2>
+                <ul class="specs-list">
+                  <li><span>Процессор:</span> <strong>Intel Core i9-14900F</strong></li>
+                  <li><span>Видеокарта:</span> <strong>RTX 4070 Ti 12GB</strong></li>
+                  <li><span>ОЗУ:</span> <strong>64 GB DDR5</strong></li>
+                  <li><span>Накопитель:</span> <strong>2 TB SSD + 4 TB HDD</strong></li>
+                </ul>
+                <span class="mockup-disclaimer">*Примерная визуализация рабочей станции</span>
+                <div class="price-row">
+                  <span class="product-price">179 990 ₽</span>
+                  <a href="product-creator.html" class="btn btn-primary">Подробнее</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Товар 5: Флагманская станция рендера -->
+            <article class="product-card" data-cat="workstation" data-gpu="rtx4080" data-cpu="amd" data-price="299990">
+              <div class="product-card-img">
+                <img src="images/pc_render.jpg" alt="Рабочая станция Hyper Render Station RTX 4090" loading="lazy">
+              </div>
+              <div class="product-card-body">
+                <span class="stock-badge stock-order">Эксклюзив</span>
+                <h2 class="product-title">Hyper Render Station</h2>
+                <ul class="specs-list">
+                  <li><span>Процессор:</span> <strong>AMD Ryzen 9 7950X</strong></li>
+                  <li><span>Видеокарта:</span> <strong>RTX 4090 24GB</strong></li>
+                  <li><span>ОЗУ:</span> <strong>64 GB DDR5 6400MHz</strong></li>
+                  <li><span>Накопитель:</span> <strong>4 TB NVMe Gen4</strong></li>
+                </ul>
+                <span class="mockup-disclaimer">*Примерная визуализация рабочей станции</span>
+                <div class="price-row">
+                  <span class="product-price">299 990 ₽</span>
+                  <a href="product-render.html" class="btn btn-primary">Подробнее</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Товар 6: Домашний / Офисный ПК -->
+            <article class="product-card" data-cat="office" data-gpu="rtx4060" data-cpu="intel" data-price="59990">
+              <div class="product-card-img">
+                <img src="images/pc_office.jpg" alt="Системный блок Hyper Home & Office" loading="lazy">
+              </div>
+              <div class="product-card-body">
+                <span class="stock-badge stock-in">В наличии</span>
+                <h2 class="product-title">Hyper Home & Office</h2>
+                <ul class="specs-list">
+                  <li><span>Процессор:</span> <strong>Intel Core i3-12100F</strong></li>
+                  <li><span>Видеокарта:</span> <strong>GeForce GTX 1650 / RTX 4060</strong></li>
+                  <li><span>ОЗУ:</span> <strong>16 GB DDR4</strong></li>
+                  <li><span>Накопитель:</span> <strong>512 GB SSD</strong></li>
+                </ul>
+                <span class="mockup-disclaimer">*Примерная визуализация сборки</span>
+                <div class="price-row">
+                  <span class="product-price">59 990 ₽</span>
+                  <a href="product-office.html" class="btn btn-primary">Подробнее</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+  </main>
+
+  <!-- Подвал сайта -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>HyperPC Store</h4>
+          <p>Специализированный интернет-магазин игровых компьютеров, рабочих станций и оригинальных комплектующих.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Каталог</h4>
+          <ul>
+            <li><a href="catalog.html">Игровые ПК</a></li>
+            <li><a href="catalog.html">Рабочие станции</a></li>
+            <li><a href="catalog.html">Комплектующие</a></li>
+            <li><a href="services.html">Кастомные сборки</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Информация</h4>
+          <ul>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="about.html">Гарантия и сервис</a></li>
+            <li><a href="about.html">Условия доставки</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <ul>
+            <li>Тел: +7 (800) 555-35-35</li>
+            <li>Email: info@hyper-pc-store.ru</li>
+            <li>Режим: Ежедневно 10:00–21:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 HyperPC Store. Учебный проект по специальности 09.02.07. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
